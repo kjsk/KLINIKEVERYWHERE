@@ -89,7 +89,7 @@ export const DoctorContainer = styled.div`
     width: 100%;
     height: 100%;
 }
-@media (max-width:650px){
+@media (max-width: 750px){
     .finddoctors{
         padding: 10vw 0;
         height: fit-content;
@@ -107,7 +107,7 @@ export const DoctorContainer = styled.div`
         text-align: left;
     }
     .finddoctors_container_matter p {
-        font-size: 2.70833333333333vw;
+        font-size: 3.3vw;
         width: inherit;
         line-height: inherit;
         margin: 1vw 0 3vw 0;

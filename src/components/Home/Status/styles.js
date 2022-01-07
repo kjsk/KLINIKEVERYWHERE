@@ -2,6 +2,9 @@ import styled from "styled-components"
 import * as palette from "../../../styles/variables"
 
 export const StatusContainer = styled.div`
+* {
+    font-family: ${palette.FONT_FAMILY} !important;
+}
 .status {
     background: linear-gradient(135deg, #00bde1 0%, #0093c6 100%);
     padding: 11.25vw 0;
@@ -55,7 +58,7 @@ export const StatusContainer = styled.div`
     line-height: 1.8vw;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .status {
         padding: 20vw 0;
         display: flex;
@@ -68,7 +71,7 @@ export const StatusContainer = styled.div`
         padding: 4vw 20px;
     }
     .status_container {
-        width: calc(100% - 8%);
+        width: calc(100% - 15%);
         grid-template-columns: repeat(1, auto);
         grid-template-rows: repeat(4, 20vw);
         gap: 4vw;
@@ -83,7 +86,7 @@ export const StatusContainer = styled.div`
         width: 12vw;
     }
     .card_matter {
-        font-size: 4vw;
+        font-size: 3.6vw;
         line-height: 5vw;
         margin: 0;
         margin-left: 4vw;

@@ -2,6 +2,9 @@ import styled from "styled-components"
 import * as palette from "../../../styles/variables"
 
 export const PatnerContainer = styled.div`
+* {
+    font-family: ${palette.CONTENT_FONT_FAMILY} !important;
+  }
 .patner {
     background: #F4FAFD;
     padding: 12vw 0;
@@ -14,7 +17,6 @@ export const PatnerContainer = styled.div`
     margin: auto;
 }
 .conten1_title h1 {
-    font-family: Noto Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 1.75vw;
@@ -38,7 +40,7 @@ export const PatnerContainer = styled.div`
     margin: auto;
     justify-content: center;
     align-items: center;
-    margin-top: 1vw;
+    margin-top: 4vw;
 }
 .patner_container_conten2 .conten1_img #img{
     margin: 0;
@@ -73,6 +75,9 @@ export const PatnerContainer = styled.div`
     }
     .patner_container_conten2{
         margin-top: 20vw;
+    }
+    .patner_container_conten2 .conten1_img {
+        margin-top: 9vw;
     }
     .patner_container_conten2 .conten1_img #img{
         max-width: 50vw;

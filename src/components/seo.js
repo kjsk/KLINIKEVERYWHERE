@@ -11,7 +11,9 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import Nav from "./Home/Nav"
 
-function SEO({ description, lang, meta, title, keywords }) {
+
+function SEO ( { description, lang, meta, title, keywords } )
+{
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -30,56 +32,58 @@ function SEO({ description, lang, meta, title, keywords }) {
 
   let allKeywords;
 
-  if(keywords.length > 0) {
+  if ( keywords.length > 0 )
+  {
     allKeywords = keywords;
-  } else {
+  } else
+  {
     allKeywords = site.siteMetadata.keywords;
   }
 
   return (
     <>
-    <Nav/>
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          name: "keywords",
-          content: allKeywords.join(", "),
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+      <Nav />
+      <Helmet
+        htmlAttributes={ {
+          lang,
+        } }
+        title={ title }
+        titleTemplate={ `%s` }
+        meta={ [
+          {
+            name: `description`,
+            content: metaDescription,
+          },
+          {
+            name: "keywords",
+            content: allKeywords.join( ", " ),
+          },
+          {
+            property: `og:title`,
+            content: title,
+          },
+          {
+            property: `og:description`,
+            content: metaDescription,
+          },
+          {
+            property: `og:type`,
+            content: `website`,
+          },
+          {
+            name: `twitter:card`,
+            content: `summary`,
+          },
+          {
+            name: `twitter:title`,
+            content: title,
+          },
+          {
+            name: `twitter:description`,
+            content: metaDescription,
+          },
+        ].concat( meta ) }
+      />
     </>
   )
 }
@@ -94,7 +98,7 @@ SEO.defaultProps = {
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
+  meta: PropTypes.arrayOf( PropTypes.object ),
   title: PropTypes.string.isRequired,
   keywords: PropTypes.array
 }

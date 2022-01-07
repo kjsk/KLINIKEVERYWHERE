@@ -3,6 +3,7 @@ import * as palette from "../../../styles/variables"
 
 export const ComingContainer = styled.div`
 * {
+    font-family: ${palette.CONTENT_FONT_FAMILY}
 }
 .commingsoon {
     padding: 109px 0 130px 0;
@@ -31,7 +32,7 @@ export const ComingContainer = styled.div`
     background-color: white;
     box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
     border-radius: 8px;
-    padding: 25px;
+    padding: 25px 25px 40px 25px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 5.8vw auto;
@@ -94,7 +95,7 @@ export const ComingContainer = styled.div`
         margin-top: 8vw;
     }
     .commingsoon_cards {
-        padding: 1.5vw;
+        padding: 1.5vw 1.5vw 2.2vw 1.5vw;
         border-radius: 1vw;
     }
     .commingsoon_cards h2 {
@@ -104,11 +105,11 @@ export const ComingContainer = styled.div`
         font-size: 1vw;
     }
     .commingsoon_cards h3{
-        font-size: 1vw;
+        font-size: 1.2vw;
         line-height: 1.8vw;
     }
 }
-@media (max-width:650px){
+@media (max-width:750px){
     .commingsoon{
         height: fit-content;
         padding: 20vw 0;
@@ -121,24 +122,25 @@ export const ComingContainer = styled.div`
         margin: auto;
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: repeat(3, 80vw);
-        gap: 64px;
-        margin-top: 83px;
+        grid-template-rows: repeat(3, 93vw);
+        gap: 13.3vw;
+        margin-top: 17.2vw;
     }
     #cs_img {
         width: 15vw;
     }
-    .commingsoon_cards{
+    .commingsoon_cards {
         padding: 4vw;
+        grid-template-rows: 15vw auto;
     }
-    .commingsoon_cards_content{
-        grid-row:3/4;
-        padding-top: 4vw;
+    .commingsoon_cards_content {
+        padding-top: 3vw;
     }
     .commingsoon_cards h2 {
         font-style: normal;
         font-weight: 600;
         font-size: 5vw;
+        line-height: inherit;
     }
     .commingsoon_cards p {
         font-style: normal;

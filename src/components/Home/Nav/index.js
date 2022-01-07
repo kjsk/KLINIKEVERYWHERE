@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { NavSection } from './styles.js'
 import { Link } from "gatsby";
-import logo from "../../../data/assets/nav-logo.svg";
 import fb from "../../../data/assets/navfb.svg";
 import insta from "../../../data/assets/navinsta.svg";
 import twitter from "../../../data/assets/navtwitter.svg";
 import Navtube from "../../../data/assets/navtube.svg";
 import ham1 from "../../../data/assets/ham.svg";
 import close from "../../../data/assets/close.svg";
+import logo1 from "../../../images/logo.svg"
+import logo2 from "../../../images/logo2.svg"
+import "../../../styles/banner.css";
 
 const Nav = () =>
 {
@@ -61,31 +63,34 @@ const Nav = () =>
             <div id={ navbar ? 'nav_main_div' : 'nav_main_div2' }>
                 <div id="nav_container">
                     <div id="logo">
-                        <Link to="/">
-                            <img src={ logo } alt="image" id="nav_logo" />
+                        <Link to="/Home" id="logo_link">
+                            <div id="nav_logo">
+                            <img src={ logo1 } alt="img" id="nav_logo1" />
+                            <img src={ logo2 } alt="img" id="nav_logo2" />
+                            </div>
                         </Link>
-                        <img src={ ham1 } alt="img" id="ham_burger" onClick={ () => setHam( true ) } />
+                        <img src={ ham1 } alt="img" id="ham_burger" onClick={ () => setHam( true ) } role="presentation"/>
                     </div>
                     <div id="nav_items">
-                        <Link to="/" id="navlinks" activeClassName="nav_active">HOME</Link>
-                        <Link to="/" id="navlinks" activeClassName="nav_active">ABOUT</Link>
-                        <Link to="/#cards_container" id="navlinks" activeClassName="nav_active">PRODUCTS</Link>
-                        <Link to="/" id="navlinks" activeClassName="nav_active">FIND DOCTOR</Link>
-                        <Link to="/" id="navlinks" activeClassName="nav_active">CONTACT US</Link>
-                        <Link to="/" id="reglink"><button id="navbtn1">Register/Login</button></Link>
+                        <Link to="/Home" id="navlinks">Home</Link>
+                        <Link to="/Home/#cards_container" id="navlinks">Products</Link>
+                        <Link to="/FindDoctors" id="navlinks">Find Doctor</Link>
+                        <Link to="/Home/#about" id="navlinks">About</Link>
+                        <Link to="/Contact" id="navlinks">Contact Us</Link>
+                        <a href="/Register" target="_blank" rel="noopener noreferrer" id="reglink"><button id="navbtn1">Register/Login</button></a>
                     </div>
                 </div>
             </div>
             {
                 ham ?
                     <div id="nav_items_mob">
-                        <img src={ close } alt="img" id="ham_burger" onClick={ () => setHam( false ) } />
-                        <Link to="/" id="navlinks" activeClassName="nav_active">HOME</Link>
-                        <Link to="/" id="navlinks" activeClassName="nav_active">ABOUT</Link>
-                        <Link to="/" id="navlinks" activeClassName="nav_active">PRODUCTS</Link>
-                        <Link to="/" id="navlinks" activeClassName="nav_active">FIND DOCTOR</Link>
-                        <Link to="/" id="navlinks" activeClassName="nav_active">CONTACT US</Link>
-                        <Link to="/register" id="reglink"><button id="navbtn1">Register/Login</button></Link>
+                        <img src={ close } alt="img" id="ham_burger" onClick={ () => setHam( false ) } role="presentation"/>
+                        <Link to="/Home" id="navlinks" onClick={ () => setHam( false ) }>Home</Link>
+                        <Link to="/Home/#cards_container" id="navlinks" onClick={ () => setHam( false ) }>Products</Link>
+                        <Link to="/FindDoctors" id="navlinks" onClick={ () => setHam( false ) }>Find Doctor</Link>
+                        <Link to="/Home/#about" id="navlinks" onClick={ () => setHam( false ) }>About</Link>
+                        <Link to="/Contact" id="navlinks" onClick={ () => setHam( false ) }>Contact Us</Link>
+                        <a href="/Register" target="_blank" rel="noopener noreferrer" id="reglink"><button id="navbtn1" onClick={ () => setHam( false ) }>Register/Login</button></a>
                         <div id="nav_icons">
                             <a href="https://www.facebook.com/NaturalMindsInd/" target="_blank" rel="noopener noreferrer"><img src={ fb } alt="img" /></a>
                             <a href="https://www.instagram.com/naturalminds_in/?hl=en" target="_blank" rel="noopener noreferrer"><img src={ insta } alt="img" /></a>

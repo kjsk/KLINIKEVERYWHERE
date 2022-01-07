@@ -2,6 +2,9 @@ import styled from "styled-components"
 import * as palette from "../../../styles/variables"
 
 export const NavSection = styled.div`
+* {
+    font-family: ${palette.CONTENT_FONT_FAMILY} !important;
+  }
 position: fixed;
 top: 0;
 left: 0;
@@ -32,6 +35,10 @@ z-index: 5;
     color: #212E34;
     margin: 0 3.21vw 0 0;
     position: relative;
+    transition: 0.5s ease-in-out;
+}
+#nav_container #nav_items #navlinks:hover {
+    color: #0093c6;
 }
 #nav_container #nav_items .nav_active:before {
     content: "";
@@ -53,14 +60,36 @@ z-index: 5;
     color: #212E34;
     margin: 0 3.21vw 0 0;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+#nav_container #nav_items #navbtn1:hover {
+    border: 0.085vw solid #0093c6;
+    color: #0093c6;
 }
 #nav_container #logo {
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 #nav_container #nav_logo {
-    width: 9.14vw;
+    width: fit-content;
+    display: flex;
+    align-items: center;
 }
+#nav_container #nav_logo #nav_logo1 {
+    width: 2.55vw;
+    animation-name: example2;
+    animation-duration: 4s;
+    transition: 0.5s ease-in-out;
+}
+#nav_container #nav_logo #nav_logo2 {
+    width: 6.15vw;
+    margin: 0 0 0 0.42vw;
+}
+@keyframes example2 {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(180deg);}
+  }
 #nav_container #ham_burger {
     display: none;
 }
@@ -68,10 +97,10 @@ z-index: 5;
     display: none;
 }
 
-@media (max-width:750px) {
+@media (max-width: 750px) {
     #nav_container {
         height: fit-content;
-        padding: 26px 28px 16px 28px;
+        padding: 18px;
     }
     #nav_container #logo {
         width: 100%;
@@ -80,14 +109,26 @@ z-index: 5;
         justify-content: space-between;
         align-items: center;
     }
+    #nav_container #nav_logo #nav_logo2 {
+        margin: 0 0 0 5px;
+    }
+    #nav_container #logo #logo_link {
+        display: flex;
+    }
     #nav_container #logo #ham_burger {
         display: flex;
         width: 24px;
         height: 24px;
     }
     #nav_container #nav_logo {
-        width: 89px;
         margin: auto 0 auto 0;
+    }
+    #nav_container #nav_logo #nav_logo1 {
+        width: 35px;
+    }
+    #nav_container #nav_logo #nav_logo2 {
+        width: 80px;
+        margin: 0 0 0 5px;
     }
     #nav_container #nav_items {
         display: none;

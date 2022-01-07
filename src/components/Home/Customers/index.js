@@ -1,9 +1,10 @@
 import React from "react";
 import img2 from "../../../data/assets/quatation.svg";
 import video from "../../../data/assets/testimonial1.mp4";
-import {CustomersContainer} from "./styles";
+import { CustomersContainer } from "./styles";
 
-const Customers = () => {
+const Customers = () =>
+{
     return (
         <CustomersContainer>
             <div className="ourcustomers" id="ourcustomers">
@@ -21,7 +22,7 @@ const Customers = () => {
                             <div className="ourcustomers_matter_head">
                                 <h2>Excellent Video Consultation Module</h2>
                                 <p>Really excited about SpotCare™ and other aspects which are going to come soon. I really like their video
- consultation module, where it had good quality video and the documentation that is not present in other apps.The charging for each consultation is also very easy to understand. It is very modular and flexible</p>
+                                    consultation module, where it had good quality video and the documentation that is not present in other apps.The charging for each consultation is also very easy to understand. It is very modular and flexible</p>
                             </div>
                             <div className="ourcustomers_doc_details">
                                 <p id="doc_name">Dr. Shirley Lynn</p>

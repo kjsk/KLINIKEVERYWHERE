@@ -15,7 +15,7 @@ const Doctor = () => {
             <p>Find your doctor of choice here for your consultation booking</p>
             <div id="search_bar">
               <img src={search} alt="img" className="searchicon" />
-              <Link to=""><input type="search" placeholder="Search by name, specialization, phone number" className="search"/></Link>
+              <Link to="/FindDoctors"><input type="search" placeholder="Search by name, specialization, phone number" className="search"/></Link>
             </div>
             </div>
           </div>

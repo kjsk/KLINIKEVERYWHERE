@@ -102,7 +102,7 @@ export const CustomersContainer = styled.div`
     opacity: 0.7;
 }
 /*=======mediaquaries==========*/
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .ourcustomers {
         padding: 9vw 5vw 20vw 5vw;
     }
@@ -137,7 +137,7 @@ export const CustomersContainer = styled.div`
 .ourcustomers_matter_head p {
     width: 100%;
     margin-top: 2vw;
-    font-size: 5vw;
+    font-size: 4vw;
     line-height: unset;
 }
 .ourcustomers_doc_details{
@@ -150,6 +150,8 @@ export const CustomersContainer = styled.div`
     font-size: 4vw;
     margin-top: 3.5vw;
     line-height: 5vw;
+    width: 100%;
+    text-align: inherit;
 }
 }
 `

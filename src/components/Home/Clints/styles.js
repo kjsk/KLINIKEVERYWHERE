@@ -79,7 +79,7 @@ export const ClintsContainer = styled.div`
     width: 10.2vw;
     height: 3.9vw;
   }
-  @media (max-width: 650px) {
+  @media (max-width: 750px) {
     #patners h1 {
       font-size: 5.8vw;
       line-height: inherit;

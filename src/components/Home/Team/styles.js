@@ -105,6 +105,7 @@ margin: auto 0 auto 1.9375vw;
   padding-right: 2.6vw;
   margin-top: 1.1875vw;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 #coreteam_button:hover {
   width: 8.5vw;
@@ -226,13 +227,14 @@ margin: auto 0 auto 1.9375vw;
   height: 100%;
   background: #ff4081;
 }
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .coreteam_container {
     padding: 10vw 5vw 12vw 5vw;
     background-color: white;
   }
   .coreteam_container h1 {
     font-size: 6vw;
+    margin: 0 0 12vw 0;
   }
   .coreteam_container h1::after {
     width: 14vw;
@@ -279,19 +281,21 @@ margin: auto 0 auto 1.9375vw;
     line-height: 3.2vw;
     margin-top: 1vw;
   }
-  #coreteam_button{
-    width: 25vw;
-    height: 8vw;
+  #coreteam_button {
+    width: 29vw;
+    height: 10vw;
     border-radius: 2vw;
-    font-size: 2.5vw;
+    font-size: 3vw;
     margin-top: 5vw;
-  }
+    padding: 0 7vw 0 0;
+    font-weight: 600;
+}
   #cbutton_img {
     position: absolute;
     margin: 0;
-    right: 1vw;
-    width: 3vw;
-    top:2.5vw;
+    right: 3.3vw;
+    width: 4.1vw;
+    top: 29%;
 }
 #coreteam_info {
   border-radius: 2vw;
@@ -444,13 +448,14 @@ margin: 0;
 right: 1vw;
 width: 1.25vw;
 }
-@media (max-width: 650px) {
+@media (max-width: 750px) {
 .coreteam_container {
   padding: 10vw 5vw 12vw 5vw;
   background-color: white;
 }
 .coreteam_container h1 {
   font-size: 6vw;
+  margin: 0 0 12vw 0;
 }
 .coreteam_container h1::after {
   width: 14vw;
@@ -489,7 +494,7 @@ width: 1.25vw;
   line-height: 5vw;
 }
 #coreteam_h3 {
-  font-size: 3.9vw;
+  font-size: 3.2vw;
   line-height: 4.9vw;
   margin-top: 2.5vw;
 }

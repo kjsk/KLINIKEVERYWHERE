@@ -66,7 +66,7 @@ export const AboutContainer = styled.div`
     }
     #about #about_conatiner_matter p {
         font-size: 3.36842105263158vw;
-        line-height: 4.63157894736842vw;
+        line-height: 5.2vw;
         width: 100%;
         margin: 96vw 0 0 0;
     }

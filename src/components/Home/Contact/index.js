@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import { API_ROOT } from "gatsby-env-variables";
+import { message } from 'antd';
 import { ContactContainer } from "./styles";
 import img6 from "../../../data/assets/contact.png";
 
-const Contact = () => {
+const Contact = () =>
+{
 
     const [ name, setName ] = useState( "" )
     const [ subject, setSubject ] = useState( "" )
     const [ email, setEmail ] = useState( "" )
     const [ query, setQuery ] = useState( "" )
-    const [ status, setStatus ] = useState( "" )
-    const [ errors, setErrors ] = useState( {} );
+    const [ errors, setErrors ] = useState( false );
     const validation = () =>
     {
 
@@ -41,7 +41,7 @@ const Contact = () => {
     {
         let item = { name, subject, email, query }
 
-        let result = await fetch( API_ROOT + "/api/contactUs", {
+        let result = await fetch( "https://www.spotcare.in/api/contactUs", {
             method: "POST",
             body: JSON.stringify( item ),
             headers: {
@@ -50,25 +50,44 @@ const Contact = () => {
             },
         } )
         result = await result.json()
-        setStatus( result )
-        console.log( status )
         if ( result.status === true )
         {
-            // toast.success(result.msg, {
-            //     position: `top-center`
-            // })
+            success();
+            clear();
+            setErrors( true )
         } else
         {
-            // toast.error("Please Try Again", {
-            //     position: `top-center`
-            // })
+            error();
         }
-
+        console.log( result.status )
     }
-    function signup2 ()
+    const signup2 = () =>
     {
         setErrors( validation() )
+        warning();
     }
+    const success = () =>
+    {
+        message.success( 'Registered' );
+    };
+
+    const error = () =>
+    {
+        message.error( 'Error' );
+    };
+    const warning = () =>
+    {
+        message.warning( 'Fill the required fields' );
+    };
+
+    const clear = () =>
+    {
+        setName( "" )
+        setSubject( "" )
+        setEmail( "" )
+        setQuery( "" )
+    }
+
     return (
         <ContactContainer>
             <div className="contact" id="contact">

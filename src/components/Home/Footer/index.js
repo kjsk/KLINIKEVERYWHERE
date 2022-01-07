@@ -9,7 +9,6 @@ const Footer = () => {
         id
         childMarkdownRemark {
           frontmatter {
-            copyright
             app1
             app2
             footer {
@@ -57,11 +56,13 @@ const Footer = () => {
     return (
         <FooterSection>
             <div className="footer">
+              <h1 id="footer_title">Klinik Everywhere Technologies Pvt Ltd</h1>
                 <div className="footer_container">
                     { data.footer.childMarkdownRemark.frontmatter.footer.map( footer =>
                         <div id="footer_block1" key={ footer.id }>
                             <div className="footer_b1_title">
                                 <p id="f_b_t">{ footer.title }</p>
+                                <p id="f_b_t2">Address</p>
                             </div>
                             <div className="footer_b1_content">
                                 <a href={ footer.link1 }><p id="footer_content">{ footer.list1 }</p></a>
@@ -100,7 +101,7 @@ const Footer = () => {
                         <a href={ footericons.link } target="_blank" rel="noopener noreferrer" key={ footericons.id }><img src={ footericons.image.childImageSharp.fluid.src } alt="img1" /></a>
                     ) }
                 </div>
-                <p id="footer_footer" key="40">{ data.footer.childMarkdownRemark.frontmatter.copyright }</p>
+                <p id="footer_footer" key="40">Copyright © 2022 Klinik Everywhere Private Limited</p>
             </div>
         </FooterSection>
     );
