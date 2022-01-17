@@ -5,29 +5,32 @@ export const CardsContainer = styled.div`
 * {
     font-family: ${palette.CONTENT_FONT_FAMILY} !important;
 }
-#cards_container {
+#products {
     background: #FFFFFF;
     padding: 3.42857142857143vw 0 0 0;
 }
-#cards_container h1 {
+#products h1 {
     font-family: Noto Sans;
     font-style: normal;
     font-weight: 800;
     font-size: 2.85714285714286vw;
-    line-height: 6.42857142857143vw;
+    line-height: 6.4vw;
     color: #000000;
     text-align: center;
   }
-#cards_container_main #card .card_main {
+#products_main #card .card_main {
     display: flex;
     padding: 7.14285714285714vw 5.71428571428571vw;
     justify-content: space-between;
 }
-#cards_container_main #card:nth-child(even) .card_main {
+#products_main #card:first-child .card_main{
+    padding: 3vw 5.71428571428571vw 7.14285714285714vw 5.71428571428571vw;
+}
+#products_main #card:nth-child(even) .card_main {
     flex-direction: row-reverse;
     background: #F4FAFD;
 }
-#cards_container_main #card #card_block1 {
+#products_main #card #card_block1 {
     display:flex;
     flex-direction: column;
     justify-content: left;
@@ -36,7 +39,7 @@ export const CardsContainer = styled.div`
     height: fit-content;
     margin: auto 0 auto 0;
 }
-#cards_container_main #card #card_block1 h1 {
+#products_main #card #card_block1 h1 {
     font-style: normal;
     font-weight: bold;
     font-size: 2.07142857142857vw;
@@ -45,7 +48,7 @@ export const CardsContainer = styled.div`
     margin: 0 auto 0 0;
     text-align: left;
 }
-#cards_container_main #card #card_block1 p {
+#products_main #card #card_block1 p {
     font-style: normal;
     font-weight: 400;
     font-size: 1.07142857142857vw;
@@ -54,7 +57,7 @@ export const CardsContainer = styled.div`
     color: #000000;
     margin: 0.8vw auto 2vw 0;
 }
-#cards_container_main #card #card_block1 button {
+#products_main #card #card_block1 button {
     width: 13.4vw;
     padding: 0.64vw 1.7vw;
     background: #FF4081;
@@ -70,14 +73,14 @@ export const CardsContainer = styled.div`
     outline: none;
     cursor: pointer;
 }
-#cards_container_main #card #mini_container {
+#products_main #card #mini_container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.07142857142857vw;
     margin: 0 auto 0 0;
 }
-#cards_container_main #card #mini_container #mini_cards {
+#products_main #card #mini_container #mini_cards {
     display: flex;
     height: 8.57142857142857vw;
     flex-direction: column;
@@ -88,12 +91,12 @@ export const CardsContainer = styled.div`
     border-radius: 0.857142857142857vw;
     padding: 1.07142857142857vw 0;
 }
-#cards_container_main #card #mini_container #mini_cards img {
+#products_main #card #mini_container #mini_cards img {
     width: 2.07142857142857vw;
     height: 2.07142857142857vw;
     margin: auto;
 }
-#cards_container_main #card #mini_container #mini_cards h1 {
+#products_main #card #mini_container #mini_cards h1 {
     font-style: normal;
     font-weight: 600;
     font-size: 0.9vw;
@@ -102,7 +105,7 @@ export const CardsContainer = styled.div`
     color: #000000;
     opacity: 0.85;
 }
-#cards_container_main #card #mini_container #mini_cards p {
+#products_main #card #mini_container #mini_cards p {
     font-style: normal;
     font-weight: normal;
     font-size: 0.85vw;
@@ -113,18 +116,18 @@ export const CardsContainer = styled.div`
     width: 10vw;
     text-align: center;
 }
-#cards_container_main #card #card_block2 {
+#products_main #card #card_block2 {
     width: fit-content;
     height: fit-content;
     margin: auto;
 }
-#cards_container_main #card #card_block2 img {
+#products_main #card #card_block2 img {
     width: 21.2142857142857vw;
 }
-#cards_container_main #card:nth-child(2) #card_block2 img {
+#products_main #card:nth-child(2) #card_block2 img {
     width: 39.4285714285714vw;
 }
-#cards_container_main #card:nth-child(3) #card_block2 img {
+#products_main #card:nth-child(3) #card_block2 img {
     width: 20.1428571428571vw;
 }
 
@@ -182,74 +185,74 @@ export const CardsContainer = styled.div`
     margin: 0.642857142857143vw 0 0 0;
 }
 @media (max-width: 750px) {
-    #cards_container {
+    #products {
         padding: 17.4vw 0 0 0;
     }
-     #cards_container h1 {
+     #products h1 {
         font-size: 5.3vw;
     }
-    #cards_container_main #card .card_main:nth-child(1) {
+    #products_main #card .card_main:nth-child(1) {
         padding: 16vw 0;
         flex-direction: column-reverse;
     }
-     #cards_container_main #card .card_main:nth-child(1) {
+     #products_main #card .card_main:nth-child(1) {
         padding: 10vw 0 16vw 0;
     }
-    #cards_container_main #card:nth-child(even) .card_main {
+    #products_main #card:nth-child(even) .card_main {
         flex-direction: column-reverse;
         padding: 16vw 0;
     }
-    #cards_container_main #card #card_block2 img {
+    #products_main #card #card_block2 img {
         width: 38.3vw;
     }
-    #cards_container_main #card:nth-child(2) #card_block2 img {
+    #products_main #card:nth-child(2) #card_block2 img {
         width: 66vw;
     }
-    #cards_container_main #card:nth-child(3) #card_block2 img {
+    #products_main #card:nth-child(3) #card_block2 img {
         width: 46vw;
     }
-    #cards_container_main #card #card_block1 {
+    #products_main #card #card_block1 {
         margin: 7vw auto auto auto;
         width: fit-content;
     }
-     #cards_container_main #card #card_block1 h1 {
+     #products_main #card #card_block1 h1 {
         font-size: 5vw;
         line-height: 6.5vw;
         margin: auto;
         width: 72vw;
         text-align: center;
     }
-    #cards_container_main #card #card_block1 p {
+    #products_main #card #card_block1 p {
         width: 88vw;
         font-size: 3.5vw;
         line-height: 6vw;
         margin: 2.08vw 0 6.25vw 0;
         text-align: center;
     }
-     #cards_container_main #card #mini_container {
+     #products_main #card #mini_container {
         width: 88vw;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 3.125vw;
         margin: 0;
     }
-    #cards_container_main #card #mini_container #mini_cards {
+    #products_main #card #mini_container #mini_cards {
         height: 30vw;
         border: 0.2vw solid #5FD4FF;
         box-shadow: 0px 0px 2vw rgba(8,40,67,0.15);
         border-radius: 2.5vw;
         padding: 0 0 1.5vw 0;
     }
-     #cards_container_main #card #mini_container #mini_cards img {
+     #products_main #card #mini_container #mini_cards img {
         width: 6.66vw;
         height: 6.66vw;
     }
-    #cards_container_main #card #mini_container #mini_cards h1 {
+    #products_main #card #mini_container #mini_cards h1 {
         font-size: 3.3vw;
         line-height: 4.5vw;
         width: inherit;
     }
-     #cards_container_main #card #mini_container #mini_cards p {
+     #products_main #card #mini_container #mini_cards p {
         font-size: 3vw;
         line-height: 4.3vw;
         margin: auto;
@@ -257,7 +260,7 @@ export const CardsContainer = styled.div`
         opacity: 0.85;
         width: 35vw;
     }
-     #cards_container_main #card #card_block1 button {
+     #products_main #card #card_block1 button {
         width: 33vw;
         height: 10vw;
         border-radius: 1.3vw;

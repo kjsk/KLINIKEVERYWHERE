@@ -63,7 +63,7 @@ const Nav = () =>
             <div id={ navbar ? 'nav_main_div' : 'nav_main_div2' }>
                 <div id="nav_container">
                     <div id="logo">
-                        <Link to="/Home" id="logo_link">
+                        <Link to="/Home/" id="logo_link">
                             <div id="nav_logo">
                             <img src={ logo1 } alt="img" id="nav_logo1" />
                             <img src={ logo2 } alt="img" id="nav_logo2" />
@@ -72,8 +72,8 @@ const Nav = () =>
                         <img src={ ham1 } alt="img" id="ham_burger" onClick={ () => setHam( true ) } role="presentation"/>
                     </div>
                     <div id="nav_items">
-                        <Link to="/Home" id="navlinks">Home</Link>
-                        <Link to="/Home/#cards_container" id="navlinks">Products</Link>
+                        <Link to="/Home/" id="navlinks">Home</Link>
+                        <Link to="/Home/#products" id="navlinks">Products</Link>
                         <Link to="/FindDoctors" id="navlinks">Find Doctor</Link>
                         <Link to="/Home/#about" id="navlinks">About</Link>
                         <Link to="/Contact" id="navlinks">Contact Us</Link>
@@ -85,8 +85,8 @@ const Nav = () =>
                 ham ?
                     <div id="nav_items_mob">
                         <img src={ close } alt="img" id="ham_burger" onClick={ () => setHam( false ) } role="presentation"/>
-                        <Link to="/Home" id="navlinks" onClick={ () => setHam( false ) }>Home</Link>
-                        <Link to="/Home/#cards_container" id="navlinks" onClick={ () => setHam( false ) }>Products</Link>
+                        <Link to="/Home/" id="navlinks" onClick={ () => setHam( false ) }>Home</Link>
+                        <Link to="/Home/#products" id="navlinks" onClick={ () => setHam( false ) }>Products</Link>
                         <Link to="/FindDoctors" id="navlinks" onClick={ () => setHam( false ) }>Find Doctor</Link>
                         <Link to="/Home/#about" id="navlinks" onClick={ () => setHam( false ) }>About</Link>
                         <Link to="/Contact" id="navlinks" onClick={ () => setHam( false ) }>Contact Us</Link>

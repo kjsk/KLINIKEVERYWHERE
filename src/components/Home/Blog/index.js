@@ -1,11 +1,9 @@
-import React, { Fragment } from "react"
+import React, { Fragment } from "react";
 import { graphql } from "gatsby";
 import SEO from "../../seo";
-import logo1 from "../../../images/logo.svg"
-import linkd from "../../../data/assets/linkedin.svg"
-import twitters from "../../../data/assets/twitter.svg"
-import Footer from "../Footer"
-import Contact from "../Contact"
+import logo1 from "../../../images/logo.svg";
+import linkd from "../../../data/assets/linkedin.svg";
+import twitters from "../../../data/assets/twitter.svg";
 import
 {
   BlogContainer, AuthorInfo,
@@ -25,7 +23,6 @@ export const BlogPost = ( {
 {
 
   return (
-    <>
       <BlogContainer>
         <h2 className="blogTitle">{ title }</h2>
         <AuthorInfo>
@@ -56,9 +53,6 @@ export const BlogPost = ( {
           }
         </BlogContent>
       </BlogContainer>
-      <Contact />
-      <Footer />
-    </>
   );
 };
 

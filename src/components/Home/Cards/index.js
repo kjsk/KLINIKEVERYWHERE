@@ -25,9 +25,9 @@ const Cards = () =>
 
     return (
         <CardsContainer>
-            <div id="cards_container">
+            <div id="products">
                 <h1>OUR PRODUCTS</h1>
-                <div id="cards_container_main">
+                <div id="products_main">
                     <div id="card">
                         <div className="card_main" id="Klinik" >
                             <div id="card_block1">

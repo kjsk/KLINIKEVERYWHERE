@@ -32,7 +32,6 @@ const FindDoctors = () =>
             }
           }
           document.addEventListener("keypress", handle);
-          return () => document.removeEventListener("keypress")
         }, [key]);
       }
     function handleEnter ()
@@ -72,6 +71,7 @@ const FindDoctors = () =>
     useEffect( () =>
     {
         search();
+        navigate( "/FindDoctors/" );
         // eslint-disable-next-line
     }, [] )
 

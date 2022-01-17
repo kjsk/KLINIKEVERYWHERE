@@ -9,7 +9,7 @@ export const AboutContainer = styled.div`
     background: #F4FAFD;
     display: flex;
     justify-content: space-between;
-    padding: 11.8571428571429vw 7.57142857142857vw 8.07142857142857vw 7.57142857142857vw;
+    padding: 8vw 7.57142857142857vw 8.07142857142857vw 7.57142857142857vw;
 }
 #about #about_conatiner_matter {
     display: flex;
