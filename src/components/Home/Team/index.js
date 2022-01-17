@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import arrow from "../../../data/assets/Arrow - Right.svg";
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby";
 import close from "../../../data/assets/close.svg";
-import doc1 from "../../../data/assets/Mohan.png";
-import doc2 from "../../../data/assets/Nithya.png";
-import doc3 from "../../../data/assets/Niraj.png";
-import doc4 from "../../../data/assets/Sunder.png";
-import doc5 from "../../../data/assets/Ganesh.png";
 import { TeamContainer, GovernerContainer } from "./styles.js";
 
 
@@ -48,6 +43,48 @@ function Team ()
                     }
                   }
                 }
+
+                governors {
+                  name
+                  designation
+                  qualification1
+                  image {
+                    childImageSharp {
+                      fluid {
+                        src
+                      }
+                    }
+                  }
+                }
+
+
+
+                advisory {
+                  name
+                  designation
+                  description
+                  image {
+                    childImageSharp {
+                      fluid {
+                        src
+                      }
+                    }
+                  }
+                }
+
+                
+                technology {
+                  name
+                  designation
+                  image {
+                    childImageSharp {
+                      fluid {
+                        src
+                      }
+                    }
+                  }
+                }
+                
               }
             }
           }   
@@ -123,16 +160,18 @@ function Team ()
             <div className="coreteam_container">
               <h1>BOARD <span style={ { color: `#1481BA` } }>OF GOVERNORS</span></h1>
               <div id="coreteam_cards">
-                <div id="coreteam_card1">
-                  <div id="coreteam_card_svg">
-                    <img src={ doc1 } alt="img1" id="coreteamimg1" />
+                { data.coreteam.childMarkdownRemark.frontmatter.governors.map( ( governors, i ) =>
+                  <div id="coreteam_card1" key={ i }>
+                    <div id="coreteam_card_svg">
+                      <img src={ governors.image.childImageSharp.fluid.src } alt="img1" id="coreteamimg1" />
+                    </div>
+                    <div id="coreteam_card_matter">
+                      <p id="coreteam_h1">{ governors.name }</p>
+                      <p id="coreteam_h2">{ governors.designation }</p>
+                      <p id="coreteam_h3">{ governors.qualification1 }</p>
+                    </div>
                   </div>
-                  <div id="coreteam_card_matter">
-                      <p id="coreteam_h1">Dr Mohan Kumar</p>
-                      <p id="coreteam_h2">Former Ambassador of India, France & Monaco</p>
-                      <p id="coreteam_h3">Chairman, Research and Information system for developing countries Author</p>
-                  </div>
-                </div>
+                ) }
               </div>
             </div>
           </div>
@@ -142,43 +181,19 @@ function Team ()
             <div className="coreteam_container">
               <h1>MEDICAL <span style={ { color: `#1481BA` } }>ADVISORY BOARD</span></h1>
               <div id="coreteam_cards">
-                <div id="coreteam_card1">
-                  <div id="coreteam_card_svg">
-                    <img src={ doc2 } alt="img1" id="coreteamimg1" />
-                  </div>
-                  <div id="coreteam_card_matter">
-                      <p id="coreteam_h1">Dr Nithya Ramachandran</p>
-                      <p id="coreteam_h2">MBBS, MS (O&G), DNB, MRCOG (UK) </p>
-                      <p id="coreteam_h3">Dip. Gynaecological Endoscopic Surgery (Germany)
-                        Certificate Course in Gestational Diabetes Mellitus
-                        Founder, ICARE Multi-Speciality Clinic, Chennai
-                        Visiting Consultant, Obstetrics & Gynaecology
-                        Apollo Women's Hospital, Chennai</p>
+                { data.coreteam.childMarkdownRemark.frontmatter.advisory.map( advisory =>
+                  <div id="coreteam_card1">
+                    <div id="coreteam_card_svg">
+                      <img src={ advisory.image.childImageSharp.fluid.src } alt="img1" id="coreteamimg1" />
+                    </div>
+                    <div id="coreteam_card_matter">
+                      <p id="coreteam_h1">{ advisory.name }</p>
+                      <p id="coreteam_h2">{ advisory.designation } </p>
+                      <p id="coreteam_h3">{ advisory.description }</p>
                     </div>
                   </div>
-                <div id="coreteam_card1">
-                  <div id="coreteam_card_svg">
-                    <img src={ doc3 } alt="img1" id="coreteamimg1" />
-                  </div>
-                  <div id="coreteam_card_matter">
-                      <p id="coreteam_h1">Dr Niraj Kumar Joshi</p>
-                      <p id="coreteam_h2">MBBS, MD(Psy), DNB(Ortho-Rhino-Laryngology) F.A.G.E</p>
-                      <p id="coreteam_h3">Consultant Physician, NHS, UK
-Specialized in General (Internal) Medicine, Hepatology,
-Inflammatory Bowel Diseases (IBD), Irritable Bowel Syndrome (IBS), Pancreaticobiliary Medicine (Bile Ducts & Pancreas)</p>
-                    </div>
-                  </div>
-                <div id="coreteam_card1">
-                  <div id="coreteam_card_svg">
-                    <img src={ doc4 } alt="img1" id="coreteamimg1" />
-                  </div>
-                  <div id="coreteam_card_matter">
-                      <p id="coreteam_h1">Dr. Lawrence Sunder Raj</p>
-                      <p id="coreteam_h2">MD (General Medicine), MRCP</p>
-                      <p id="coreteam_h3">Awarded membership at IASSA, IVA, AOI, ISO, IAOHNS, IMA, and American Academy of Otorhinolaryngology (AAA-HNS). Pursuing his Ph.D. in ENT.</p>
-                    </div>
-                  </div>
-                </div>
+                ) }
+              </div>
             </div>
           </div>
         </div>
@@ -187,15 +202,17 @@ Inflammatory Bowel Diseases (IBD), Irritable Bowel Syndrome (IBS), Pancreaticobi
             <div className="coreteam_container">
               <h1>TECHNOLOGY <span style={ { color: `#1481BA` } }>ADVISORY BOARD</span></h1>
               <div id="coreteam_cards">
-                <div id="coreteam_card1">
-                  <div id="coreteam_card_svg">
-                    <img src={ doc5 } alt="img1" id="coreteamimg1" />
+                { data.coreteam.childMarkdownRemark.frontmatter.technology.map( technology =>
+                  <div id="coreteam_card1">
+                    <div id="coreteam_card_svg">
+                      <img src={ technology.image.childImageSharp.fluid.src } alt="img1" id="coreteamimg1" />
+                    </div>
+                    <div id="coreteam_card_matter">
+                      <p id="coreteam_h1">{ technology.name }</p>
+                      <p id="coreteam_h2">{ technology.designation }</p>
+                    </div>
                   </div>
-                  <div id="coreteam_card_matter">
-                      <p id="coreteam_h1">Ganesh Natarajan</p>
-                      <p id="coreteam_h2">Former Managing Director, Accenture </p>
-                  </div>
-                </div>
+                ) }
               </div>
             </div>
           </div>

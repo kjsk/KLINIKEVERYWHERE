@@ -139,6 +139,7 @@ export const RegisterContainer = styled.div`
 }
 #register_checkbox {
     display: flex;
+    align-items: center;
     flex-direction: row;
     margin-top: 3vw;
 }
@@ -164,6 +165,7 @@ export const RegisterContainer = styled.div`
     text-decoration: underline;
     color: #4285f4;
     cursor: pointer;
+    margin: 0 0 0 0.3vw;
 }
 #register_button {
     width: 100%;
@@ -301,6 +303,7 @@ export const RegisterContainer = styled.div`
 @media (max-width: 650px) {
     #login {
         margin: 0 0 25vw 0;
+        padding: 0 0 10vw 0;
     }
     #register_container {
         width: 90%;
@@ -361,7 +364,7 @@ export const RegisterContainer = styled.div`
     }
     #register_checkbox p {
         font-size: 3vw;
-        margin-top: 2vw;
+        margin-top: 0;
         margin-left: 2vw;
     }
     #register_checkbox input {

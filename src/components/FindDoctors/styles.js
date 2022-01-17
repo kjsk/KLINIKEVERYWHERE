@@ -7,6 +7,7 @@ export const DoctorContainer = styled.div`
 }
 #doctors {
     background-color: white;
+    padding: 0 0 5vw 0;
   }
   #doctors #doctor_container_main {
     padding-top: 6vw;

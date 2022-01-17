@@ -114,9 +114,9 @@ export const BlogsContainer = styled.div`
 `
 
 export const BlogContainer = styled.div`
-  max-width: 700px;
+  max-width: 800px;
   margin: 48px auto;
-  padding-top:80px;
+  padding:80px 0;
   @media (max-width: 768px) {
     padding: 24px;
   }
