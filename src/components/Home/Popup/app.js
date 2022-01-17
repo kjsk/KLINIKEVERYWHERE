@@ -22,7 +22,6 @@ const App = () =>
             }
           }
           document.addEventListener("keypress", handle);
-          return () => document.removeEventListener("keypress")
         }, [key]);
       }
     function handleEnter ()

@@ -21,7 +21,7 @@ import App from "../Popup/app";
 
 const Cards = () =>
 {
-    const [ open, setOpen ] = useState( );
+    const [ open, setOpen ] = useState( false );
 
     return (
         <CardsContainer>

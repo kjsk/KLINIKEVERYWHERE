@@ -12,7 +12,7 @@ const IndexPage = () =>
     setTimeout( () =>
     {
       setLoading( false )
-      navigate( "/Home" )
+      navigate( "/Home/" )
     }, 5000 )
   }, [] )
   return (
