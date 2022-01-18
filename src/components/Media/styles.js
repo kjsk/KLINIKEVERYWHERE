@@ -92,9 +92,5 @@ export const MediaContainer = styled.div`
     .modal-content {
       width: 100%;
     }
-  }
-  
-
-
+  }  
 `
-
