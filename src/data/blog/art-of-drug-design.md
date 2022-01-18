@@ -5,8 +5,8 @@ author_image: palani-director.png
 author: any One
 bio: Assisting Equitable distribution of health
 title: Assisting Equitable distribution of health
-linkdin: https://in.linkedin.com/company/natural-minds-india
-twitter: https://twitter.com/naturalminds_in
+linkdin: https://www.linkedin.com/company/klinik-everywhere
+twitter: https://twitter.com/KlinikEverywhr
 date: 2022-01-13T18:30:00.000Z
 previewImage: blog1.png
 tags:

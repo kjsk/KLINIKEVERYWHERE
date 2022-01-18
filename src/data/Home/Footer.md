@@ -46,22 +46,22 @@ footericons:
       {
           id: 1,
           image: "../assets/linkdin.png",
-          link: "https://in.linkedin.com/company/natural-minds-india",
+          link: "https://www.linkedin.com/company/klinik-everywhere",
       },
       {
           id: 2,
           image: "../assets/facebook.png",
-          link: "https://www.facebook.com/NaturalMindsInd/",
+          link: "https://www.facebook.com/KlinikEverywhere",
       },
       {
           id: 3,
           image: "../assets/instagram.png",
-          link: "https://www.instagram.com/naturalminds_in/?hl=en",
+          link: "https://www.instagram.com/klinikeverywhere",
       },
       {
           id: 4,
           image: "../assets/twitter.png",
-          link: "https://twitter.com/naturalminds_in",
+          link: "https://twitter.com/KlinikEverywhr",
       },
       {
           id: 5,

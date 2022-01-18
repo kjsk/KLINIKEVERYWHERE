@@ -4,6 +4,7 @@ import search from "../../../data/assets/search.svg";
 import img from "../../../data/assets/find_doc.png";
 import { DoctorContainer } from "./styles.js";
 
+
 const Doctor = () => {
   return (
     <DoctorContainer>
@@ -26,6 +27,7 @@ const Doctor = () => {
           </div>
         </div>
       </div>
+     
     </DoctorContainer>
   );
 };

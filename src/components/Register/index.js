@@ -4,6 +4,7 @@ import { RegisterContainer } from "./styles";
 import Terms from "./terms";
 import Nav from "../Home/Nav";
 import { Popover, message, Checkbox } from 'antd';
+import Footer from "../Home/Footer";
 
 const Register = () =>
 {
@@ -438,7 +439,7 @@ const Register = () =>
                         </div>
                         <div id="register_checkbox">
                             <Checkbox onChange={ e => setTnc( e.target.checked ) } />
-                            <p>By signing up, I accept NaturalMinds’s<span><Popover content={ Terms }>Terms and conditions</Popover></span></p>
+                            <p>By signing up, I accept Klinik Everywhere Private Limited<span><Popover content={ Terms }>Terms and conditions</Popover></span></p>
                         </div>
                         <div id="register_button">
                             { ( !name || !email || ( !/\S+@\S+\.\S+/.test( email ) ) || !gender || !selectedUserType || ( !phone || phone.length < 9 ) || !licenseNo || !orgName || ( !orgPhone || orgPhone.length < 9 ) || !address || !city || !state || !pincode || !tnc_id ) ? (
@@ -454,7 +455,9 @@ const Register = () =>
                 </div>
 
             </div>
+            <Footer />
         </RegisterContainer>
+        
     )
 }
 export default Register;

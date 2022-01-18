@@ -14,6 +14,7 @@ import { DoctorContainer } from "./styles.js";
 import { CloseOutlined } from '@ant-design/icons';
 import App from "../Home/Popup/app";
 import img from "../../data/assets/banner3.png";
+import Footer from "../Home/Footer";
 
 const FindDoctors = () =>
 {
@@ -202,6 +203,7 @@ const FindDoctors = () =>
                     :
                     ""
             }
+            <Footer />
         </DoctorContainer>
     )
 }

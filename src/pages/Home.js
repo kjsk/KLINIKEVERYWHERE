@@ -35,7 +35,7 @@ const HomeIndex = ( { data } ) =>
       <Clints />
       <BlogPage blogLists={ blogLists } />
       <Contact />
-      <Footer />
+      
     </Fragment>
   )
 }
