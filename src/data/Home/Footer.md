@@ -29,7 +29,7 @@ footer:
           list2: "Testimonials",
           list3: "About Team",
           list4: "Blogs & Articles",
-          link1: "/",
+          link1: "/Media",
           link2: "/Home/#ourcustomers",
           link3: "/Home/#coreteam_main_container",
           link4: "/Home/#blog",
