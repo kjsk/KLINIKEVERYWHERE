@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import Nav from "./Home/Nav"
+
 
 
 function SEO ( { description, lang, meta, title, keywords } )
@@ -42,7 +42,6 @@ function SEO ( { description, lang, meta, title, keywords } )
 
   return (
     <>
-      <Nav />
       <Helmet
         htmlAttributes={ {
           lang,

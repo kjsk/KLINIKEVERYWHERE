@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Nav from "../components/Home/Nav";
-import Footer from "../components/Home/Footer";
 import { navigate } from "gatsby";
 import { RegisterContainer } from "../components/Register/styles";
 import { Popover, message, Checkbox } from 'antd';
@@ -185,7 +183,6 @@ const RegisterIndex = () =>
 
     return (
         <RegisterContainer>
-            <Nav />
             <div id="login_main">
                 <div id="login">
                     <div id="register_container">
@@ -458,9 +455,7 @@ const RegisterIndex = () =>
                         </div>
                     </div>
                 </div>
-
             </div>
-            <Footer />
         </RegisterContainer>
     )
 }

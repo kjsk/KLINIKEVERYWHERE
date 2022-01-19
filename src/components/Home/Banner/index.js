@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BannerSection } from "./styles.js";
-import icon from "../../../data/assets/play_icon.svg";
+// import icon from "../../../data/assets/play_icon.svg";
 import banner from "../../../data/assets/banner.png";
 import { CloseOutlined } from '@ant-design/icons';
 import { Carousel } from 'antd';

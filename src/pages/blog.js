@@ -1,8 +1,9 @@
 import React from "react";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 import { BlogsContainer } from "../components/Home/Blog/styles";
 
-export const BlogPage = ( { blogLists } ) => {
+export const BlogPage = ( { blogLists } ) =>
+{
 
     const blogList = blogLists
 
@@ -13,7 +14,7 @@ export const BlogPage = ( { blogLists } ) => {
                 <h1 id="blog_h1">Blogs & Articles</h1>
                 <div className="blog_container">
                     { blogList && blogList.map( ( blogItem, i ) =>
-                        <Link className="blog_card" key={i} to={blogItem.node.fields.slug}>
+                        <Link className="blog_card" key={ i } to={ blogItem.node.fields.slug }>
                             <div className="blog_card_img">
                                 <img src={ blogItem.node.frontmatter.previewImage.publicURL } alt="img1" />
                             </div>

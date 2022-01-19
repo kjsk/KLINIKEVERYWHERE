@@ -3,8 +3,6 @@ import { navigate } from "gatsby";
 import axios from "axios";
 import { message } from 'antd';
 import logo from "../images/logo.svg";
-import Nav from "../components/Home/Nav";
-import Footer from "../components/Home/Footer";
 import { PayContainer } from "../components/SpotPay/styles";
 
 
@@ -95,7 +93,7 @@ function Spotpay ( { location } )
                             paymentFor: 'Registration',
                             amount: amount,
                             currency: "INR",
-                            name: "Natural Minds",
+                            name: "Klinik Everywhere",
                             description: "Adding value to the lives",
                             image: { logo },
                             order_id: result.data,
@@ -205,7 +203,6 @@ function Spotpay ( { location } )
     }
     return (
         <PayContainer>
-            <Nav />
             <div id="login_main">
                 <div id="pay">
                     <div id="pay_container_main">
@@ -301,7 +298,6 @@ function Spotpay ( { location } )
                         </div>
                     </div>
                 </div>
-                <Footer />
             </div>
         </PayContainer>
     )
