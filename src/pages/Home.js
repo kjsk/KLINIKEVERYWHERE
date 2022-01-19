@@ -10,8 +10,8 @@ import Team from "../components/Home/Team"
 import Customers from "../components/Home/Customers"
 import Clints from "../components/Home/Clints"
 import BlogPage from "./blog"
-import Footer from "../components/Home/Footer"
 import Contact from "../components/Home/Contact"
+import Footer from "../components/Home/Footer"
 import { graphql } from "gatsby";
 
 import SEO from "../components/seo"
@@ -35,7 +35,7 @@ const HomeIndex = ( { data } ) =>
       <Clints />
       <BlogPage blogLists={ blogLists } />
       <Contact />
-      
+      <Footer />
     </Fragment>
   )
 }

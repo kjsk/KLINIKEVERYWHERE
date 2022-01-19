@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { message } from 'antd';
 import { ContactContainer } from "./styles";
 import img6 from "../../../data/assets/contact.png";
-import Footer from "../Footer";
-
-
 
 const Contact = () =>
 {
@@ -130,10 +127,8 @@ const Contact = () =>
                         </div>
                     </div>
                 </div>
-            
+
             </div>
-            
-            <Footer />
         </ContactContainer>
 
 
