@@ -10,8 +10,7 @@ coreteam:
       qualification1: "Former Global Managing Director, Healthcare and",
       qualification2: "Public Service, Accenture  |  Alumni of BITS Pilani",
       description:
-        "Prior to taking over as CEO for NaturalMinds Digital Systems, as a global leader at Accenture, Bala managed a team of experienced, global technology experts that provide new-age, digital technology solutions to Client's businesses.
-        He had responsibility to grow technology businesses across all geographies, focused on the Healthcare and Governmental sectors for nearly 15 years. Bala has extensive experience collaborating with C-Suite and their direct reports in advising them with most suited Technology solutions that helps them achieve their business goals and objectives.",
+        "Prior to taking over as CEO for Klinik Everywhere Technologies Private Limited , as a global leader at Accenture, Bala managed a team of experienced, global technology experts that provide new-age, digital technology solutions to Client's businesses. He had responsibility to grow technology businesses across all geographies, focused on the Healthcare and Governmental sectors for nearly 15 years. Bala has extensive experience collaborating with C-Suite and their direct reports in advising them with most suited Technology solutions that helps them achieve their business goals and objectives.",
       description2: "",
       image: "../assets/Bala.png",
       button: "VIEW MORE",
@@ -23,7 +22,7 @@ coreteam:
       qualification1: "Founder, YRSK Marketing",
       qualification2: "",
       description: "Raman, with 33+ years in sales and marketing operations, has handled varied / diverse industry segments notable among which are Real Estate and Photography. His significant assignments were with international photo giants like Agfa Gevaert and Konica in Photography and later with large Real-Estate names like  Adarsh Group, Alliance Group, Shriram Properties, Phoenix Group, Unishire Group launching various landmark projects in Bangalore, Chennai, Hyderabad and Kolkata. Known for his flamboyance and flourish he masterminded the exponential Launch of PHOENIX GROUP'S ONE BANGALORE WEST that witnessed an unprecedented 90% sale fetching Rs. 850 Cr in 15 months breaking all Launch records. Post this he has been a Marketing consultant to some select Realty players. Raman is also a certified Global Trainer in Leadership and related Management skills.",
-      description2: "Currently as CMO of NaturalMinds, Raman expects to bring in his expertise in building a never-say-die team and also the brand and more importantly the market-share by virtue of great need-based, cost -effective campaigns and strategic marketing and correct positioning of all NaturalMinds products.",
+      description2: "Currently as CMO of Klinik Everywhere Technologies Private Limited, Raman expects to bring in his expertise in building a never-say-die team and also the brand and more importantly the market-share by virtue of great need-based, cost -effective campaigns and strategic marketing and correct positioning of all  Klinik Everywhere's products.",
       image: "../assets/Anamika.png",
       button: "VIEW MORE",
     },

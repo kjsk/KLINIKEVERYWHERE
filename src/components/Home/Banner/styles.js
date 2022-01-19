@@ -143,6 +143,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
 #banner_section {
     margin: 28vw 0 0 0;
     position: relative;
@@ -209,5 +211,8 @@ a {
  #banner_image {
     margin: auto 0 -3vw 0;
  }
+
+ 
+
 }
 `

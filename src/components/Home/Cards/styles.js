@@ -140,6 +140,12 @@ export const CardsContainer = styled.div`
     gap: 2vw;
     margin: 3.5vw 0 0 0;
 }
+#Klinik{
+    scroll-margin-top: 159px;
+}
+#SpotCare{
+    scroll-margin-top: 76px;
+}
 #highlights #highlights_container #mini_cards {
     display: flex;
     height: 10.4285714285714vw;
@@ -197,6 +203,7 @@ export const CardsContainer = styled.div`
     }
      #products_main #card .card_main:nth-child(1) {
         padding: 10vw 0 16vw 0;
+        scroll-margin-top: 48px;
     }
     #products_main #card:nth-child(even) .card_main {
         flex-direction: column-reverse;

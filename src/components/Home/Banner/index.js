@@ -84,7 +84,7 @@ const Banner = () =>
 
                     <div id="button" >
                         <button onClick={ () => setToggle( true ) }>Dowload App</button>
-                        <button onClick={ () => setVideoPop( true ) } disabled><img src={ icon } alt="img" id='icon' /> Watch Video </button>
+                        {/* <button onClick={ () => setVideoPop( true ) } disabled><img src={ icon } alt="img" id='icon' /> Watch Video </button> */}
                     </div>
                 </div>
                 <div id="banner_image" >

@@ -113,7 +113,7 @@ cards:
     {
       id: 3,
       cardid: "Telecare",
-      title: "TeleCare",
+      title: "TeleCare™",
       content: "TeleCare is a world-class, High-definition TeleHealth offering from Klinik Everywhere. It enables doctors to provide high-quality, real-time teleconsultation to their patients while working on their EMR. TeleCare provides flexibility in consultation timing. It also allows doctors and patients to consult without fear of time-out.",
       minicards:
         [
