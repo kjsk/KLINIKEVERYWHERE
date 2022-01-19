@@ -101,7 +101,7 @@ const Footer = () => {
                         <a href={ footericons.link } target="_blank" rel="noopener noreferrer" key={ footericons.id }><img src={ footericons.image.childImageSharp.fluid.src } alt="img1" /></a>
                     ) }
                 </div>
-                <p id="footer_footer" key="40">Copyright © 2022 Klinik Everywhere Private Limited</p>
+                <p id="footer_footer" key="40">Copyright © 2022 Klinik Everywhere Technologies Private Limited</p>
             </div>
         </FooterSection>
     );
